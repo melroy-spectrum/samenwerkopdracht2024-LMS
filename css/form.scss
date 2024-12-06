@@ -1,0 +1,31 @@
+form {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    width: auto;
+    row-gap: 11px;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+        flex-shrink: 0;
+    }
+}
+
+input, textarea {
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 7px 15px;
+}
+
+input:user-invalid {
+    border-color: red;
+}
+
+label[for="comments"] {
+    display: grid;
+    grid-template-columns: 1fr;
+}

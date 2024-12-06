@@ -1,0 +1,75 @@
+.animation-frame {
+  overflow: hidden;
+}
+
+.animation-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-display {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.slide-display > .current-slide, .slide-display > .next-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide-display .next-slide {
+  pointer-events: none;
+}
+.slide-display[data-animation-type=slide] > .current-slide {
+  right: 0;
+  top: 0;
+}
+.slide-display[data-animation-type=slide][data-animate] > .next-slide, .slide-display[data-animation-type=slide][data-animate] > .current-slide {
+  transition: right 1.3s, top 1.3s;
+}
+.slide-display[data-animation-type=slide][data-animation-direction=down] > .next-slide {
+  top: -100%;
+}
+.slide-display[data-animation-type=slide][data-animation-direction=down][data-transition] > .current-slide {
+  top: 100%;
+}
+.slide-display[data-animation-type=slide][data-animation-direction=down][data-transition] > .next-slide {
+  top: 0;
+}
+.slide-display[data-animation-type=slide][data-animation-direction=up] > .next-slide {
+  top: 100%;
+}
+.slide-display[data-animation-type=slide][data-animation-direction=up][data-transition] > .current-slide {
+  top: -100%;
+}
+.slide-display[data-animation-type=slide][data-animation-direction=up][data-transition] > .next-slide {
+  top: 0;
+}
+.slide-display[data-animation-type=slide][data-animation-direction=left] > .next-slide {
+  right: -100%;
+}
+.slide-display[data-animation-type=slide][data-animation-direction=left][data-transition] > .current-slide {
+  right: 100%;
+}
+.slide-display[data-animation-type=slide][data-animation-direction=left][data-transition] > .next-slide {
+  right: 0;
+}
+.slide-display[data-animation-type=slide][data-animation-direction=right] > .next-slide {
+  right: 100%;
+}
+.slide-display[data-animation-type=slide][data-animation-direction=right][data-transition] > .current-slide {
+  right: -100%;
+}
+.slide-display[data-animation-type=slide][data-animation-direction=right][data-transition] > .next-slide {
+  right: 0;
+}
+.slide-display[data-animation-type=fade] > .next-slide {
+  z-index: 10;
+  opacity: 0%;
+}
+.slide-display[data-animation-type=fade][data-animate] > .next-slide, .slide-display[data-animation-type=fade][data-animate] > .current-slide {
+  transition: opacity 1.3s;
+}
+.slide-display[data-animation-type=fade][data-transition] > .next-slide {
+  opacity: 100%;
+}/*# sourceMappingURL=animation.css.map */

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/form.css" />
+		<link rel="stylesheet" href="../css/animation.css" />
+		<link rel="stylesheet" href="../css/slideshow.css" />
+		<title>Spectrum Spektakel</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Playball&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<div class="animation-frame scroll-control" id="key-control">
+			<div class="animation-slide homepage" id="homepage">
+				<div class="navigation-bar">
+					<div class="nav-wrapper">
+						<!-- Logo here. -->
+						<img id="logo" src="../assets/logo tijdelijk.png" alt="logo" />
+						<nav>
+							<ul>
+								<li><a href="#homepage">Home</a></li>
+								<li><a href="#introduction">Over ons</a></li>
+								<li><a href="#form">Meet de Kerstman</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="event-summary">
+						<h1 class="title">Samenkomen bij het Spectrum Spektakel</h1>
+						<h3 class="subtitle">10 t/m 31 december</h3>
+					</div>
+				</div>
+				<div class="slideshow-frame">
+					<div class="animation-frame" id="images-container"></div>
+					<div id="slide-controls">
+						<button class="button previous-button">
+							<span>&#xAB; </span>
+						</button>
+						<div id="dots-indicator"></div>
+						<button class="button next-button">
+							<span>&#xBB; </span>
+						</button>
+					</div>
+				</div>
+				<a id="down-link" class="nav-link" href="#introduction"
+					><img id="arrow-down" class="nav-arrow" src="../assets/downarrow.png" alt="Arrow down"
+				/></a>
+			</div>
+			<div class="animation-slide introduction" id="introduction">
+				<section>
+					<div class="left">
+						<img src="../assets/couple.jpg" class="couple" />
+					</div>
+					<div class="right">
+						<h2>Over ons</h2>
+						<div class="one">
+							<p>
+								Gelegen in de bourgondische zuiderstad Breda, in het groene stadsdeel Haagse Beemden, is van
+								<b>10 t&sol;m 31 december</b> de allereerste editie van het <b>Spectrum Spektakel</b> te bezoeken. Geniet op het plein
+								aan de Hambroeklaan van een beker warme gl&uuml;hwein, struin langs de authentieke houten kerstkraampjes of maak een
+								ritje in het spectaculair verlichte reuzenrad. Het Spectrum Spektakel biedt een betoverende ervaring voor jong, oud,
+								en alles daar tussenin! <br />
+								Het Spectrum Spektakel is dagelijks geopend van 13:00 tot 22:00 uur.
+							</p>
+							<p>
+								Op woensdag 11 december tussen 19:00 en 21:00 vindt de <b>prikkelarme kerstmarkt</b> plaats. Dit houdt in dat geluid
+								en licht wordt beperkt zodat mensen met een prikkelgevoeligheid ook van het Spectrum Spektakel kunnen genieten.
+							</p>
+						</div>
+						<div class="decoration"><img src="../assets/decoration.png" width="320px" /></div>
+					</div>
+				</section>
+			</div>
+			<div class="animation-slide form" id="form">
+				<h2>Meet de Kerstman</h2>
+				<div class="flex-container">
+					<form id="meeting-form">
+						<label for="firstname">
+							<span>Voornaam:</span>
+							<input type="text" id="firstname" name="firstname" placeholder="Voornaam" required />
+						</label>
+						<label for="surname">
+							<span>Achternaam:</span>
+							<input type="text" id="surname" name="surname" placeholder="Achternaam" required />
+						</label>
+						<label for="email">
+							<span>E-mail:</span>
+							<input type="email" id="email" name="email" placeholder="E-mail" required />
+						</label>
+						<label for="date">
+							<span>Voorkeursdatum:</span>
+							<input type="date" id="date" name="date" value="2024-12-01" min="2024-12-01" max="2024-12-31" required />
+						</label>
+						<label for="participants">
+							<span>Hoeveelheid deelnemers (1-5):</span>
+							<input type="number" id="participants" name="participants" min="1" max="5" value="1" required />
+						</label>
+						<label for="comments">
+							<span>Opmerkingen:</span>
+							<textarea name="comments" id="comments" placeholder="Voeg hier mogelijke opmerkingen toe."></textarea>
+						</label>
+						<label id="check-terms" for="terms">
+							<input type="checkbox" id="terms" name="Voorwaarden" value="required" />
+							<span>Ik ga akkoord met de <a href="#">algemene voorwaarden</a>.</span>
+						</label>
+						<input type="submit" id="submit" value="Versturen" />
+					</form>
+					<div id="lorem-ipsum-text">
+						<p>
+							Beleef een magisch moment samen met vrienden of familie, boek een persoonlijke ontmoeting met de Kerstman en zijn helpers!
+						</p>
+						<p>
+							Deel jullie kerstwensen met de Kerstman, luid samen de grote kerstbel en maak een foto als herinnering aan dit bijzondere
+							moment. Wij kijken ernaar uit om samen een onvergetelijke kerstervaring te cre&euml;ren!
+						</p>
+						<p>
+							Vul het formulier <b>volledig</b> in en ontvang binnen twee werkdagen en bevestiging voor je voorkeursdatum en definitieve
+							tijd.
+						</p>
+						<div class="decorationtwo"><img src="../assets/decoration.png" width="320px" /></div>
+					</div>
+				</div>
+			</div>
+			<div class="animation-slide contact" id="contact">
+				<div class="contact-text">
+					<h2>Contact</h2>
+					<p>
+						<b>Adres:</b> Hambroeklaan 1, Breda&emsp;|&emsp;<b>Telefoon:</b> &plus;31 76 8329821&emsp;|&emsp;<b>Email:</b>
+						info@spectrumspektakel.nl
+					</p>
+				</div>
+				<div class="google-maps">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6855.950752485301!2d4.723057850819973!3d51.606635219755134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c420127968b443%3A0xff5b663271360a00!2sHambroeklaan%201%2C%204822%20ZZ%20Breda!5e0!3m2!1sen!2snl!4v1732878706024!5m2!1sen!2snl"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+						title="Spectrumkaart">
+					</iframe>
+					<a id="up-link" class="nav-link" href="#homepage"
+						><img id="arrow-up" class="nav-arrow" src="../assets/uparrow.png" alt="Arrow up"
+					/></a>
+				</div>
+			</div>
+		</div>
+		<script src="../js/script.js" type="module"></script>
+	</body>
+</html>

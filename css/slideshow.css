@@ -1,0 +1,121 @@
+.slideshow-frame {
+	height: 100%;
+	width: 100%;
+	background-color: transparent;
+}
+
+#images-container {
+	height: 100%;
+	width: 100%;
+	.images {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+#slide-controls {
+	z-index: 100;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: 10px;
+	.btn {
+		border: none;
+		border-radius: 5px;
+		background-color: transparent;
+		margin: 0 10px;
+		cursor: pointer;
+		.arrow {
+			height: 25px;
+			width: 25px;
+		}
+		#arrow-right {
+			rotate: 180deg;
+		}
+	}
+	#dots-indicator {
+		display: flex;
+		.dot {
+			height: 15px;
+			width: 15px;
+			border: 3px solid white;
+			border-radius: 20px;
+			background-color: transparent;
+			margin: 0 5px;
+			cursor: pointer;
+		}
+		.dot.active {
+			background-color: white;
+		}
+		.dot:hover {
+			border: 3px solid red;
+			background-color: red;
+		}
+	}
+}
+
+.button {
+	vertical-align: middle;
+	display: inline-block;
+	border-radius: 4px;
+	background-color: transparent;
+	border: none;
+	color: #ffffff;
+	text-align: center;
+	padding: 20px;
+	width: 200px;
+	/* transition: all 0.5s; */
+	cursor: pointer;
+	margin: 10px;
+}
+
+.previous-button {
+	position: relative;
+}
+
+.next-button {
+	position: relative;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: all 0.5s;
+	font-size: 22px;
+}
+
+.previous-button span:after {
+	position: absolute;
+	opacity: 0;
+}
+
+.next-button span:before {
+	position: absolute;
+	opacity: 0;
+}
+
+.previous-button:hover span {
+	padding-right: 25px;
+}
+.next-button:hover span {
+	padding-left: 25px;
+}
+
+.previous-button:hover::after {
+	opacity: 1;
+	content: "Vorige";
+	font-size: 20px;
+	right: 0;
+	position: absolute;
+}
+.next-button:hover::before {
+	opacity: 1;
+	content: "Volgende";
+	font-size: 20px;
+	left: 0;
+	position: absolute;
+}
