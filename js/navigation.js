@@ -74,7 +74,7 @@ function keydownHandler(parent, event) {
     }
     
     // Only look at keys in the dictionary.
-    if (!event.key in offsetMapping) {
+    if (!(event.key in offsetMapping)) {
         return;
     }
 
